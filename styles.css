@@ -203,9 +203,9 @@ p {
 }
 
 .logo-image {
-    height: 4rem;
+    height: 5.5rem;
     width: auto;
-    max-width: 200px;
+    max-width: 280px;
     object-fit: contain;
 }
 
@@ -1670,8 +1670,8 @@ section {
     }
     
     .logo-image {
-        height: 3.5rem;
-        max-width: 160px;
+        height: 4.5rem;
+        max-width: 220px;
     }
     
     .footer-logo-image {
