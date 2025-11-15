@@ -202,6 +202,21 @@ p {
     color: var(--text-color);
 }
 
+.logo-image {
+    height: 4rem;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+.footer-logo-image {
+    height: 6rem;
+    width: auto;
+    max-width: 250px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
 .logo-icon {
     font-size: 3rem;
 }
@@ -1652,5 +1667,15 @@ section {
     
     .social-link i {
         font-size: 2rem;
+    }
+    
+    .logo-image {
+        height: 3.5rem;
+        max-width: 160px;
+    }
+    
+    .footer-logo-image {
+        height: 5rem;
+        max-width: 200px;
     }
 }
