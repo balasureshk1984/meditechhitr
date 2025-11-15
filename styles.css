@@ -1151,14 +1151,50 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
     text-align: center;
 }
 
-.logo-placeholder i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+.company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    transition: all var(--transition-medium);
+    letter-spacing: -0.5px;
+}
+
+.bank-logo {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.tech-logo {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.finance-logo {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+.amazon-logo {
+    background: linear-gradient(135deg, #ff9900 0%, #ffad33 100%);
+    box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);
+    color: #232f3e;
+}
+
+.client-logo:hover .company-logo {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
 
 .logo-placeholder span {
@@ -1166,6 +1202,12 @@ section {
     font-weight: 600;
     color: var(--text-color);
     line-height: 1.2;
+}
+
+.logo-placeholder small {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 400;
 }
 
 .client-stats {
