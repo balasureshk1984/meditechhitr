@@ -253,15 +253,22 @@ class MediTechHire {
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const target = parseInt(entry.target.dataset.target);
-                    animateCounter(entry.target, target);
+                    const targetValue = entry.target.dataset.target;
+                    // Only animate if element has data-target attribute and it's a valid number
+                    if (targetValue && !isNaN(parseInt(targetValue))) {
+                        const target = parseInt(targetValue);
+                        animateCounter(entry.target, target);
+                    }
                     counterObserver.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.8 });
 
         this.statNumbers.forEach(counter => {
-            counterObserver.observe(counter);
+            // Only observe counters that have data-target attributes
+            if (counter.dataset.target) {
+                counterObserver.observe(counter);
+            }
         });
     }
 
